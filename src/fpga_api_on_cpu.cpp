@@ -165,7 +165,7 @@ void FPGA::convLowering(const std::vector<std::vector<std::vector<std::vector<fl
     for(int i_chan = 0; i_chan < input_channel; i_chan ++) {
       for(int conv_i = 0; conv_i < conv_height; conv_i ++) {
         for(int conv_j = 0; conv_j < conv_width; conv_j ++) {
-          new_weights[new_weights_i][new_weights_j ++] = inputs[c_chan][i_chan][conv_i][conv_j];
+          new_weights[new_weights_i][new_weights_j ++] = cnn_weights[c_chan][i_chan][conv_i][conv_j];
         }
       }        
     }
