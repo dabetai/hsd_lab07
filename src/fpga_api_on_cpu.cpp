@@ -84,6 +84,7 @@ void FPGA::largeMV(const float *large_mat, const float *input, float *output, in
       int block_col = min(v_size_, num_input - j);
 
       // 1) Assign a vector
+      // IMPLEMENT THIS
       memset(vec, 0, v_size_);
       memcpy(vec, input + j, sizeof(float) * block_col);
 
